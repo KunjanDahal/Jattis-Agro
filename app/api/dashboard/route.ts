@@ -186,7 +186,12 @@ export async function GET() {
     const profitTrend = calculateTrend(currentMonthProfit, previousMonthProfit)
 
     // Generate recent activities from all collections
-    const activities = []
+    const activities: Array<{
+      action: string
+      time: string
+      type: 'success' | 'warning' | 'info'
+      timestamp: number
+    }> = []
 
     // Add Dhaan activities
     dhaanRecords.forEach(record => {

@@ -362,8 +362,8 @@ export default function Sales() {
         {/* Search Bar */}
         <div className="flex items-center space-x-2 bg-white dark:bg-gray-800 rounded-lg p-3 shadow-sm border border-gray-200 dark:border-gray-700">
           <Search className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-          <input
-            type="text"
+              <input
+                type="text"
             placeholder="Search by order ID, customer, status, or date..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -433,41 +433,41 @@ export default function Sales() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                         {formatNepaliDate(record.date)}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white font-medium">
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white font-medium">
                         {record.quantity} kg
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
                         NPR {formatAmount(record.pricePerKg)}
-                      </td>
+                    </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white font-medium">
                         NPR {formatAmount(record.totalPrice)}
-                      </td>
+                    </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
                         {record.customerName}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
                         <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${getStatusBadgeStyle(record.status)}`}>
                           {record.status}
-                        </span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                         <button 
                           onClick={() => openEditModal(record)}
                           className="text-primary-600 hover:text-primary-900 dark:text-primary-400 dark:hover:text-primary-300 mr-3"
                           title="Edit record"
                         >
                           <Edit className="h-4 w-4" />
-                        </button>
+                      </button>
                         <button 
                           onClick={() => openDeleteModal(record)}
                           className="text-red-600 hover:text-red-900 dark:text-red-400 dark:hover:text-red-300"
                           title="Delete record"
                         >
                           <Trash2 className="h-4 w-4" />
-                        </button>
-                      </td>
-                    </tr>
+                      </button>
+                    </td>
+                  </tr>
                   ))
                 )}
               </tbody>
@@ -549,7 +549,7 @@ export default function Sales() {
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               placeholder="Enter price per kg"
             />
-          </div>
+        </div>
 
           <div>
             <label htmlFor="customerName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
@@ -565,9 +565,9 @@ export default function Sales() {
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               placeholder="Enter customer name"
             />
-          </div>
+                </div>
 
-          <div>
+                  <div>
             <label htmlFor="status" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Status *
             </label>
@@ -590,8 +590,8 @@ export default function Sales() {
             <div className="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 <strong>Total Price:</strong> NPR {formatAmount(calculateTotalPrice(formData.quantity, formData.pricePerKg))}
-              </p>
-            </div>
+                    </p>
+                  </div>
           )}
 
           <div className="flex justify-end space-x-3 pt-4">
@@ -687,7 +687,7 @@ export default function Sales() {
             />
           </div>
 
-          <div>
+                  <div>
             <label htmlFor="edit-customerName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Customer Name *
             </label>
@@ -701,9 +701,9 @@ export default function Sales() {
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               placeholder="Enter customer name"
             />
-          </div>
+                  </div>
 
-          <div>
+                  <div>
             <label htmlFor="edit-status" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Status *
             </label>
@@ -726,8 +726,8 @@ export default function Sales() {
             <div className="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 <strong>Total Price:</strong> NPR {formatAmount(calculateTotalPrice(formData.quantity, formData.pricePerKg))}
-              </p>
-            </div>
+                    </p>
+                  </div>
           )}
 
           <div className="flex justify-end space-x-3 pt-4">
@@ -744,7 +744,7 @@ export default function Sales() {
             >
               Update Sale
             </button>
-          </div>
+                </div>
         </form>
       </Modal>
 
@@ -769,7 +769,7 @@ export default function Sales() {
                 <strong>Customer:</strong> {selectedRecord.customerName}<br />
                 <strong>Status:</strong> {selectedRecord.status}
               </p>
-            </div>
+              </div>
           )}
           <div className="flex justify-end space-x-3 pt-4">
             <button
