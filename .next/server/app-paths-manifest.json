@@ -1,0 +1,8 @@
+{
+  "/page": "app/page.js",
+  "/sales/page": "app/sales/page.js",
+  "/extra-expenses/page": "app/extra-expenses/page.js",
+  "/employee-salary/page": "app/employee-salary/page.js",
+  "/chuira-record/page": "app/chuira-record/page.js",
+  "/api/dashboard/route": "app/api/dashboard/route.js"
+}
