@@ -91,9 +91,9 @@ export default function Dashboard() {
 
   return (
     <DashboardLayout>
-      <div className="space-y-8">
+      <div className="space-y-6">
         {/* Header */}
-        <div className="mb-2">
+        <div>
           <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
             Dashboard
           </h1>

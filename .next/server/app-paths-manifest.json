@@ -1,8 +1,12 @@
 {
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
-  "/sales/page": "app/sales/page.js",
-  "/extra-expenses/page": "app/extra-expenses/page.js",
   "/employee-salary/page": "app/employee-salary/page.js",
+  "/dhaan-record/page": "app/dhaan-record/page.js",
+  "/api/dhaan-records/route": "app/api/dhaan-records/route.js",
+  "/api/dashboard/route": "app/api/dashboard/route.js",
   "/chuira-record/page": "app/chuira-record/page.js",
-  "/api/dashboard/route": "app/api/dashboard/route.js"
+  "/api/chuira-records/route": "app/api/chuira-records/route.js",
+  "/extra-expenses/page": "app/extra-expenses/page.js",
+  "/api/extra-expenses/route": "app/api/extra-expenses/route.js"
 }

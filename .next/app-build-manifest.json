@@ -11,25 +11,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/sales/page": [
+    "/employee-salary/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/sales/page.js"
+      "static/chunks/app/employee-salary/page.js"
+    ],
+    "/dhaan-record/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/dhaan-record/page.js"
+    ],
+    "/chuira-record/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/chuira-record/page.js"
     ],
     "/extra-expenses/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/extra-expenses/page.js"
     ],
-    "/employee-salary/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/employee-salary/page.js"
-    ],
-    "/chuira-record/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/chuira-record/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }

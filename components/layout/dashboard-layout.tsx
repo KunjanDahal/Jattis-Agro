@@ -12,13 +12,19 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-      
-      <main className="mt-16">
-        <div className="p-6 sm:p-8 lg:p-10 xl:p-12">
+      {/* Combined Container - Both sidebar and main content start from same top */}
+      <div className="flex">
+        {/* Sidebar */}
+        <Sidebar 
+          isOpen={sidebarOpen} 
+          onClose={() => setSidebarOpen(!sidebarOpen)} 
+        />
+
+        {/* Main Content - Same container as sidebar */}
+        <div className="flex-1">
           {children}
         </div>
-      </main>
+      </div>
     </div>
   )
 } 
